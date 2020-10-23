@@ -66,7 +66,7 @@ import static org.apache.skywalking.e2e.utils.Yamls.load;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class ALSE2E extends SkyWalkingTestAdapter {
     private final String swWebappHost = Optional.ofNullable(Strings.emptyToNull(System.getenv("WEBAPP_HOST"))).orElse("127.0.0.1");
-    private final String swWebappPort = Optional.ofNullable(Strings.emptyToNull(System.getenv("WEBAPP_PORT"))).orElse("8080");
+    private final String swWebappPort = Optional.ofNullable(Strings.emptyToNull(System.getenv("WEBAPP_PORT"))).orElse("12800");
     protected HostAndPort swWebappHostPort = HostAndPort.builder()
                                                         .host(swWebappHost)
                                                         .port(Integer.parseInt(swWebappPort))
